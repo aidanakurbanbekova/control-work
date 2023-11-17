@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+/* The end of Reset Styles */
+
+.container {
+    margin: 0 auto;
+    width: 720px;
+}
+
+/* General Styles */
+.weather-wrap {
+    padding: 150px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* input style */
+.weatherBox {
+    border: 3px solid #28688C;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    outline: blue;
+    padding: 0 5px;
+}
+
+.weatherBox:hover {
+    border: 3px solid blue;
+}
+
+/* The end of input style */
+
+/* Error Block Style */
+.error-box {
+    background: #28688C;
+    box-shadow: 1px 5px 25px 3px #444;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+/* The end of Error Block Style */
+
+/* Card Styles */
+.weather-card {
+    display: flex;
+    background: #28688C;
+    box-shadow: 1px 5px 25px 3px #444;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    display: none;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.time-location {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.temp-condition-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.humidity-details {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.temp {
+    font-size: 75px;
+    font-weight: 600;
+}
+
+.location {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#country {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+span {
+    margin-bottom: 20px;
+}
+
+span:last-child {
+    margin-bottom: 0;
+}
+
+.date1 {
+    margin-top: 20px;
+}
+
+.inner-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+/* The end of Card Styles */
+/* loader */
+
+.dot-pulse {
+    position: relative;
+    left: -9999px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #28688C;
+    color: #28688C;
+    box-shadow: 9999px 0 0 -5px;
+    animation: dot-pulse 1.5s infinite linear;
+    animation-delay: 0.25s;
+    margin-top: 100px;
+}
+
+.dot-pulse::before, .dot-pulse::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #28688C;
+    color: #28688C;
+}
+
+.dot-pulse::before {
+    box-shadow: 9984px 0 0 -5px;
+    animation: dot-pulse-before 1.5s infinite linear;
+    animation-delay: 0s;
+}
+
+.dot-pulse::after {
+    box-shadow: 10014px 0 0 -5px;
+    animation: dot-pulse-after 1.5s infinite linear;
+    animation-delay: 0.5s;
+}
+
+@keyframes dot-pulse-before {
+    0% {
+        box-shadow: 9984px 0 0 -5px;
+    }
+    30% {
+        box-shadow: 9984px 0 0 2px;
+    }
+    60%, 100% {
+        box-shadow: 9984px 0 0 -5px;
+    }
+}
+
+@keyframes dot-pulse {
+    0% {
+        box-shadow: 9999px 0 0 -5px;
+    }
+    30% {
+        box-shadow: 9999px 0 0 2px;
+    }
+    60%, 100% {
+        box-shadow: 9999px 0 0 -5px;
+    }
+}
+
+@keyframes dot-pulse-after {
+    0% {
+        box-shadow: 10014px 0 0 -5px;
+    }
+    30% {
+        box-shadow: 10014px 0 0 2px;
+    }
+    60%, 100% {
+        box-shadow: 10014px 0 0 -5px;
+    }
+}
+
+/* The end of loader */
+/* The end of General Styles */
+/* The end of General Styles */

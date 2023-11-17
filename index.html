@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:wght@700&family=Lora:wght@700&family=Montserrat:wght@400;700&family=Nanum+Gothic:wght@800&family=Noto+Sans&family=Open+Sans&family=Oxygen:wght@400;700&family=Poppins&family=Roboto:wght@700&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="page-wrap">
+    <div class="container">
+        <div class="weather-wrap">
+
+            <input type="text" placeholder="Search for a city..." class="weatherBox">
+            <div class="error-box">
+                <span class="error">Please enter the name of the city and press enter to see the results</span>
+            </div>
+            <div class="dot-pulse"></div>
+            <div class="weather-card">
+
+                <div class="time-location">
+                    <span class="location">Bishkek,</span>
+                    <span id="country">Kyrgyzstan</span>
+                    <span class="date">Wednesday, November 17, </span>
+                    <span class="time">12:02</span>
+                </div>
+                <div class="temp-condition-details">
+                    <div class="inner-block">
+                        <img src="" class="picture"></img>
+                        <h2 class="temp">3 °c</h2>
+                    </div>
+                    <span class="condition">Sunny</span>
+                </div>
+
+                <div class="humidity-details">
+                    <span class="feels">Feels like: <span class="temp-feels">3 °C</span></span>
+                    <span class="humidity">Humidity: <span class="humid-value">76%</span></span>
+                    <span class="wind">Wind: <span class="wind-value">3.6 kp/h</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="main.js" </script>
+</body>
+</html>
+
+
